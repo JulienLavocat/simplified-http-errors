@@ -1,10 +1,15 @@
 # Usage
 
 1 - Install express-async-errors using `npm i express-async-errors`
+
 2 - Install simplified-http-errors using `npm i simplified-http-errors`
+
 3 - Import `HttpError` class using `const HttpError = require("simplified-http-errors").HttpError;`
+
 3 - Add `require("express-async-errors")` in your main file.
+
 4 - (Optional but recomended) use library's errors handling middleware using `app.use(require("simplified-http-errors").middleware());` (**important**: this import must be done after every`app.use()` calls).
+
 4 - Whenever you need to throw an exception, simply do :
 
     throw new HttpError("<your error code from possibles errors>", "<error message>", (optional) "<error details>"
