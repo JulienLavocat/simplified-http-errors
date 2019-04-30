@@ -32,10 +32,10 @@ With express-async-errors you don't need to have any specific code like wrapping
     
     app.get("/", async (req, res) => {
 	    try {
-			const result = await doSomeStuffThatCanFail();
-		} catch(err) {
-			throw new HttpError("internal", "Something went wrong");
-		}
+			  const result = await doSomeStuffThatCanFail();
+		  } catch(err) {
+			  throw new HttpError("internal", "Something went wrong");
+		  }
     });
     
     app.get("/missingArguments", (req, res) => {
