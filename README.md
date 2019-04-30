@@ -18,6 +18,7 @@ With express-async-errors you don't need to have any specific code like wrapping
 
 # Exemple file
 
+```js
     const  express  =  require("express");
     const  HttpError  =  require("simplified-http-errors").HttpError;
     
@@ -43,3 +44,4 @@ With express-async-errors you don't need to have any specific code like wrapping
     });
 
     app.listen(80);
+```
