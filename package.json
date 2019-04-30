@@ -1,5 +1,5 @@
 {
-  "name": "simplyfied-http-errors",
+  "name": "simplified-http-errors",
   "version": "0.2.0",
   "description": "Easy/Firebase-like http errors",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JulienLavocat/simplyfied-http-errors.git"
+    "url": "git+https://github.com/JulienLavocat/simplified-http-errors.git"
   },
   "keywords": [
     "http",
@@ -19,7 +19,7 @@
   "author": "Julien Lavocat",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JulienLavocat/simplyfied-http-errors/issues"
+    "url": "https://github.com/JulienLavocat/simplified-http-errors/issues"
   },
-  "homepage": "https://github.com/JulienLavocat/simplyfied-http-errors#readme"
+  "homepage": "https://github.com/JulienLavocat/simplified-http-errors#readme"
 }

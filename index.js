@@ -1,5 +1,7 @@
 //All code is extracted from firebase-functions sdk
 
+var undefined;
+
 /**
  * Standard error codes for different ways a request can fail, as defined by:
  * https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto
@@ -101,10 +103,19 @@ class HttpError extends Error {
             status: this.status,
             message: this.message,
         };
-        if (!_.isUndefined(this.details)) {
+        if (!this.details === undefined) {
             json.details = this.details;
         }
         return json;
     }
 }
-exports.HttpError = HttpError;
+
+module.exports.HttpError = HttpError;
+
+module.exports.middleware = function(error, req, res, next) {
+    if (error instanceof HttpsError) {
+        const status = error.httpStatus;
+        const body = { error: error.toJSON() };
+        res.status(status).send(body);
+    }
+}
