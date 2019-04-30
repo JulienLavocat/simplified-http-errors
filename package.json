@@ -1,0 +1,25 @@
+{
+  "name": "simplyfied-http-errors",
+  "version": "0.2.0",
+  "description": "Easy/Firebase-like http errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulienLavocat/simplyfied-http-errors.git"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "errors",
+    "firebase"
+  ],
+  "author": "Julien Lavocat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulienLavocat/simplyfied-http-errors/issues"
+  },
+  "homepage": "https://github.com/JulienLavocat/simplyfied-http-errors#readme"
+}
