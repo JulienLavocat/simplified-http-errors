@@ -113,7 +113,7 @@ class HttpError extends Error {
 module.exports.HttpError = HttpError;
 
 module.exports.middleware = function(error, req, res, next) {
-    if (error instanceof HttpsError) {
+    if (error instanceof HttpError) {
         const status = error.httpStatus;
         const body = { error: error.toJSON() };
         res.status(status).send(body);
